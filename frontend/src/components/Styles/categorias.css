@@ -1,0 +1,200 @@
+/* Estilos generales del contenedor del perfil */
+.profile-container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Estilos del encabezado del perfil */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #454546;
+}
+
+/* Estilos de la información del perfil */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos de los campos de entrada */
+.profile-info input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+}
+
+/* Estilos de las etiquetas y los valores de información */
+.profile-info div {
+  margin-bottom: 15px;
+}
+
+.profile-info label {
+  font-weight: bold;
+}
+
+/* Estilos del botón de guardar cambios */
+.save-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.save-button button {
+  padding: 10px 20px;
+  background-color: #f59ac7;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 1px rgba(68, 56, 49, 0.5);
+}
+
+.save-button button:hover {
+  background-color: #ff98d4;
+}
+
+/* Estilos del contenedor de productos aprobados */
+.product-container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Estilos del encabezado de la sección de productos aprobados */
+.product-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #454546;
+}
+
+
+/* Estilos del encabezado del Productos */
+.product-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #454546;
+}
+
+
+/* Estilos generales del formulario de productos */
+.product-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos de los campos de entrada */
+.product-container input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+/* Estilos del widget de clasificación */
+.star-widget {
+  margin-top: 10px;
+}
+
+.star-widget label {
+  margin-right: 10px;
+}
+
+/* Estilos del contenedor de administración de perfiles */
+.admin-container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Estilos del encabezado de administración de perfiles */
+.admin-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #454546;
+}
+
+/* Estilos de la tabla de administración de perfiles */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #f59ac7;
+  color: #ffffff;
+}
+
+/* Estilos de los botones de administración */
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-buttons button {
+  padding: 10px 20px;
+  background-color: #f59ac7;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.admin-buttons button:hover {
+  background-color: #ff98d4;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

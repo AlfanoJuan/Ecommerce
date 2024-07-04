@@ -1,0 +1,157 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo del banner */
+  .banner {
+    background-image: url(C:\PIA\Front\front-bdm\src\components\images\compra.jpg);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo del contenedor de productos */
+  .contenedor-productos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  /* Estilo de cada producto */
+  .producto {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* 2 productos por fila */
+    transition: transform 0.3s ease;
+  
+    /* Aplicar sombra al hacer hover */
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Estilo de la imagen del producto */
+  .imagen-producto {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  
+    /* Aplicar sombra al hacer hover */
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  /* Estilo de la cantidad */
+  .cantidad{
+    display: flex;
+    justify-content: space-between; /* Esto alinea los elementos al principio y al final del contenedor */
+    align-items: center; /* Esto centra verticalmente los elementos */
+  }
+  
+  /* Estilo del título del producto */
+  .titulo-producto {
+    font-size: 18px;
+    color: #454546;
+    margin-top: 10px;
+  }
+  
+  /* Estilo de la descripción del producto */
+  .descripcion {
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  /* Estilo de las acciones del producto (botones) */
+  .acciones {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+  }
+  
+  /* Estilo del botón Eliminar */
+  .boton-eliminar {
+    width: 40%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f59ac7;
+    color: #ffffff;
+    font-size: 50;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(68, 56, 49, 0.5);
+  
+    /* Cambiar color al hacer hover */
+    &:hover {
+      background-color: #ff58b9;
+      box-shadow: none;
+      box-shadow: 2px 2px 1px rgba(68, 56, 49, 0.5);
+    }
+  }
+  
+  /* Estilo del botón Aumentar Cantidad */
+  .boton-aumentar {
+    width: 10%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f59ac7;
+    color: #ffffff;
+    font-size: 50;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(68, 56, 49, 0.5);
+  
+    /* Cambiar color al hacer hover */
+    &:hover {
+      background-color: #ff58b9;
+      box-shadow: none;
+      box-shadow: 2px 2px 1px rgba(68, 56, 49, 0.5);
+    }
+  }
+  
+  /* Estilo de la sección de acciones del carrito */
+  .acciones-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+/* Estilo del botón Confirmar */
+.boton-confirmar {
+    width: 400%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #94e0ca;
+    color: #ffffff;
+    font-size: 60;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(68, 56, 49, 0.5);
+    margin: 20px auto 0; /* Alinear al centro horizontalmente y agregar espacio superior */
+    align-self: flex-end; /* Alinear al final del contenedor */
+    
+    /* Cambiar color al hacer hover */
+    &:hover {
+
+        background-color: #40b995;
+      box-shadow: none;
+    }
+  }
+  
+  

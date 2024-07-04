@@ -1,0 +1,61 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+  
+  /* Estilo del banner */
+  .banner {
+    background-image: url(C:\PIA\Front\front-bdm\src\components\images\compra.jpg);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contenedor-pago{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .element{
+    padding: 20px 30px;
+  }
+  
+  /* Estilo del formulario de pago */
+  form {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo del título del formulario */
+  h2 {
+    text-align: center;
+    color: #454546;
+  }
+  
+  /* Estilo de las etiquetas del formulario */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+  }
+  
+  /* Estilo de los campos de entrada del formulario */
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  

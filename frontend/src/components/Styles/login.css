@@ -1,0 +1,246 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("C:\PIA\Front\front-bdm\public\fondoBDM.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+ 
+@media screen and (max-width: 720px) {
+  .imagen-izquierda {
+    display: none; /* Ocultar la imagen */
+  }
+
+  .imagen-izquierdaR {
+    display: none; /* Ocultar la imagen */
+  }
+}
+@media screen and (max-width: 720px) {
+  .imagen-izquierda {
+    display: none; /* Ocultar la imagen */
+  }
+
+  .imagen-izquierdaR {
+    display: none; /* Ocultar la imagen */
+  }
+
+}
+
+
+.custom-link {
+  color: #ff0000; /* Cambia el color a rojo (puedes usar cualquier valor de color que desees) */
+}
+
+.container-login {
+  margin-top: 3%;
+  display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+.container-register {
+  margin-top: 2%;
+  display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-izquierda {
+
+  width: 300px; /* Esto hará que la imagen ocupe la mitad del contenedor */
+  height: auto; /* Mantendrá la proporción de aspecto de la imagen */
+  box-shadow: 5px 5px 20px #4545466b;
+
+}
+
+.imagen-izquierdaR {
+
+  width: 544px; /* Esto hará que la imagen ocupe la mitad del contenedor */
+  height: auto; /* Mantendrá la proporción de aspecto de la imagen */
+  margin-bottom: 10%;
+  box-shadow: 5px 5px 20px #4545466b;
+
+}
+
+.form_main {
+
+  width: 280px; /* Ancho del formulario, ajusta según tus necesidades */
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 20px #4545466b;
+  position: relative;
+  overflow: hidden;
+}
+
+.form_register {
+  width: 50%; /* Ancho del formulario, ajusta según tus necesidades */
+  margin-bottom: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 20px #4545466b;
+  position: relative;
+  overflow: hidden;
+}
+  
+@font-face {
+  font-family: 'Freehand-Regular';
+  src:url(/src/components/Fuentes/Freehand-Regular.ttf); 
+}
+
+.form_register {
+  width: 50%; /* Ancho del formulario, ajusta según tus necesidades */
+  margin-bottom: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 20px #4545466b;
+  position: relative;
+  overflow: hidden;
+}
+  
+@font-face {
+  font-family: 'Freehand-Regular';
+  src:url(/src/components/Fuentes/Freehand-Regular.ttf); 
+}
+
+.heading {
+  /* Establece el título "Login" para que esté centrado y más arriba */
+  font-family: 'Freehand-Regular';
+  font-size: 4em;
+  color: #40b995;
+  font-weight: 700;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.heading2 {
+  /* Establece el título "Login" para que esté centrado y más arriba */
+  font-family: 'Freehand-Regular';
+  font-size: 2.5em;
+  color: #40b995;
+  font-weight: 700;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+  .inputContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .inputField {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #40b995;
+    margin: 5px 0px;
+    color: rgb(125, 125, 125);
+    font-size: 1em;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-radius: 8px; /* Añade bordes redondeados */
+    outline: none; /* Elimina el resplandor azul del enfoque */
+  }
+
+  .inputField2 {
+    width: 163px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #40b995;
+    margin: 5px 8px;
+    color: rgb(125, 125, 125);
+    font-size: 1em;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-radius: 8px; /* Añade bordes redondeados */
+    outline: none; /* Elimina el resplandor azul del enfoque */
+  }
+  
+  .inputField:focus {
+    border: 2px solid #f59ac7;  /* Cambia el color del borde al enfocar */
+  }
+
+  .button {
+    position:  center;
+    width: 100%;
+    border: none;
+    background-color: #94e0ca; 
+    color: white;
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius: 10px; /* Agrega un radio de borde para suavizar los bordes */
+  }
+  
+  .button:hover {
+    background-color: #40b995;
+  }
+  
+  .forgotLink {
+    font-family: 'Arial', sans-serif; /* Establece la fuente Arial como primera opción */
+    font-weight: bold; /* Establece la negrita */
+    font-size:0.8em;
+    color: #94e0ca; 
+    text-decoration: none;
+    text-align: center;
+  }
+
+.user-passw {
+  text-align: left;
+  color:#40b995;
+}
+
+.dont-account {
+  color: #7d7d7d;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.RegisterLink {
+  color: #40b995;
+  font-family: 'Arial', sans-serif; /* Establece la fuente Arial como primera opción */
+  font-weight: bold; /* Establece la negrita */
+  font-size: 1em;
+  text-decoration: none;
+  text-align:center;
+}
+
+.user-passw-container {
+  display: flex;
+  justify-content: space-between; /* Esto separará los elementos horizontalmente */
+}
+
+.form_main2 {
+
+ 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 20px #4545466b;
+  position: relative;
+  overflow: hidden;
+}

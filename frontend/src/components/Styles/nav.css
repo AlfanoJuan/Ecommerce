@@ -1,0 +1,23 @@
+.nav{
+    background-color: brown;
+}
+
+ul {
+    display: flex;
+    color: blue;
+}
+
+li{
+    margin-right: 10%;
+}
+
+.Link{
+    margin-left: 6%;
+    text-decoration: none;
+    color: #525252;
+    padding-top: 4%;
+}
+
+.ms-2   {
+    color: #ff58b9;
+}
