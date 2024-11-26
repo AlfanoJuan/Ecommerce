@@ -7,7 +7,7 @@ function CarritoDeCompra() {
   
   const navigate = useNavigate();
 
-  const [productoData, setproductoData] = useState([{}])
+  const [productoData, setProductoData] = useState([{}])
 
   useEffect ( () => { 
     fetch(`http://localhost:5000/getCarritoD/${(id)}`, {
@@ -23,7 +23,7 @@ function CarritoDeCompra() {
               };
              
           });
-          setproductoData(formattedData);
+          setProductoData(formattedData);
           
       } else {
         console.log('Invalid data format:', data);

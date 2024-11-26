@@ -4,7 +4,7 @@ import bcryptjs from 'bcryptjs'
 
 export const postUser = async (req, res) => {
 
-    const { usuario, correo, contrasena, nombre, apellidoP,  fnacimiento, sexo, rol } = req.body;
+    const { usuario, correo, contrasena, nombre, apellidoP,  fnacimiento, sexo, tipoSangre, rol } = req.body;
 
     const date = new Date();
     const regDate = date.toISOString().slice(0, 19).replace('T', ' ');
@@ -13,8 +13,8 @@ export const postUser = async (req, res) => {
     
     try {
 
-        await pool.query('INSERT INTO tb_user (usuario, correo, contrasena, nombre, apellido_p, fecha_n, sexo, rol, regdate) VALUES (?,?,?,?,?,?,?,?,?)', 
-        [usuario, correo, contrasenaHaash, nombre, apellidoP, fnacimiento, sexo, rol, regDate]);
+        await pool.query('INSERT INTO tb_user (usuario, correo, contrasena, nombre, apellido_p, fecha_n, sexo, tipoSangre, rol, regdate) VALUES (?,?,?,?,?,?,?,?,?,?)', 
+        [usuario, correo, contrasenaHaash, nombre, apellidoP, fnacimiento, sexo, tipoSangre, rol, regDate]);
 
         res.status(200).json('succesfull');
     } catch (error) {

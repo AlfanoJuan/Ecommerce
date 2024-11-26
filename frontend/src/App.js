@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import EditarProducto from "./components/edit-producto.jsx";
 import ElegirProducto from "./components/elegir-producto.jsx";
 import Categorias from "./components/categorias.jsx";
+import Mapas from "./components/mapas.jsx";
 import Pago from "./components/pago.jsx";
 
 
@@ -26,6 +27,7 @@ function App() {
     apellidoP:'', 
     fnacimiento:'', 
     sexo:'',
+    tipoSangre:'',
     rol:''
   });
 
@@ -38,6 +40,7 @@ function App() {
     apellidoP:'', 
     fnacimiento:'', 
     sexo:'',
+    tipoSangre:'',
     rol:''
   }}});
 
@@ -79,7 +82,7 @@ function App() {
 
 
   const location = useLocation();
-
+//HTML
   return (
     <div className="App">
       {/* Renderizar NavbarReact solo si no estás en la página de inicio de sesión */}
@@ -97,6 +100,7 @@ function App() {
         <Route path="/editarproducto" element={<ElegirProducto userdata={userdata}/>}/>
         <Route path="/editarproducto/:id" element={<EditarProducto/>}/>
         <Route path="/pago/:id" element={<Pago userdata={userdata}/>}/>
+        <Route path="/mapas" element={<Mapas />} />
       </Routes>
 
       {location.pathname !== "/login" && location.pathname !== "/register" && (

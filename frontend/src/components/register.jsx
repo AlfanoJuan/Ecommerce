@@ -18,17 +18,20 @@ export const Register = ({user, setUser}) => {
     console.log(user);
   }
 
-  let {usuario, correo, contrasena, nombre, apellidoP, fnacimiento, sexo, rol} = user
+  //let {usuario, correo, contrasena, nombre, apellidoP, fnacimiento, sexo, tipoSangre, rol} = user
 
   const navigate = useNavigate(); 
 
   const handleSubmit = (event) => { 
-    
-    if (usuario === '' || correo === '' || contrasena === '' || nombre === '' || apellidoP === '' || fnacimiento === '' || sexo === '' || rol === ''){
+    /*
+    if (usuario === '' || correo === '' || contrasena === '' || nombre === '' || apellidoP === '' || fnacimiento === '' || sexo === '' || rol === ''|| tipoSangre === ''){
       alert('Todos los campos son obligatorios')
       return
     }
-  
+      */
+
+  console.log(user)
+
     const requestInit = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
@@ -50,6 +53,7 @@ export const Register = ({user, setUser}) => {
       apellidoP:'', 
       fnacimiento:'', 
       sexo:'', 
+      tipoSangre: '',
       rol:''
     })
 
@@ -62,7 +66,7 @@ export const Register = ({user, setUser}) => {
 
     <div className="center-container">
 
-      <img src={miImagenR} alt="Descripción de la imagen" className="imagen-izquierdaR"/>
+      {/* <img src={miImagenR} alt="Descripción de la imagen" className="imagen-izquierdaR"/> */}
 
       <form onSubmit={ handleSubmit }className="form_main2">
         <h1 className="heading2">Register</h1>
@@ -104,6 +108,16 @@ export const Register = ({user, setUser}) => {
           <select name="sexo" onChange={handleClick} className="inputField2">
             <option value="0">M</option>
             <option value="1" selected>F</option>
+          </select>
+          <select name="tipoSangre" onChange={handleClick} className="inputField2">
+            <option value="A+">A+</option>
+            <option value="A-" selected>A-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
           </select>
         </div>
 

@@ -8,7 +8,7 @@ body {
   
   /* Estilo del banner */
   .banner {
-    background-image: url(C:\PIA\Front\front-bdm\src\components\images\compra.jpg);
+    background-image: url("C:\Users\sebas\OneDrive\Documents\GitHub\SimuladorConferencias\SimuladorConferencias\Ecommerce\frontend\src\components\images\compra.jpg");
     color: #ffffff;
     padding: 20px;
     text-align: center;

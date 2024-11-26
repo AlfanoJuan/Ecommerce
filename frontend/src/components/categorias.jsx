@@ -139,7 +139,7 @@ function Categorias() {
     const handleCategoriasEdit = (id_categoria)  => {
 
 
-          event.preventDefault();
+        //  event.preventDefault();
         // Obtener elementos del DOM
         var modal = document.getElementById('myModalEdit');
         var span = document.getElementsByClassName('close')[0];
