@@ -11,7 +11,7 @@ export const postCategoria = async(req, res) => {
 
 export const getAllCategorias = async(req, res) => {
 
-    const [rows] = await pool.query('SELECT id_categoria, nombre, descripcion from tb_categoria WHERE status_ = 1');
+    const [rows] = await pool.query('SELECT id_categoria, nombre, descripcion from tb_categoria WHERE _status = 1');
 
     res.status(200).json(rows);
 }

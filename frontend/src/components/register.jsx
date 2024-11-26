@@ -18,17 +18,17 @@ export const Register = ({user, setUser}) => {
     console.log(user);
   }
 
-  let {usuario, correo, contrasena, nombre, apellidoP, fnacimiento, sexo, rol} = user
+  let {usuario, correo, contrasena, nombre, apellidoP, fnacimiento, sexo, tipo_sanguineo, rol} = user
 
   const navigate = useNavigate(); 
 
   const handleSubmit = (event) => { 
     
-    if (usuario === '' || correo === '' || contrasena === '' || nombre === '' || apellidoP === '' || fnacimiento === '' || sexo === '' || rol === ''){
-      alert('Todos los campos son obligatorios')
-      return
-    }
-  
+    // if (usuario === '' || correo === '' || contrasena === '' || nombre === '' || apellidoP === '' || fnacimiento === '' || sexo === '' || rol === ''){
+    //   alert('Todos los campos son obligatorios')
+    //   return
+    // }
+  console.log(user)
     const requestInit = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
@@ -49,7 +49,8 @@ export const Register = ({user, setUser}) => {
       nombre:'', 
       apellidoP:'', 
       fnacimiento:'', 
-      sexo:'', 
+      sexo:'',
+      tipo_sanguineo:'', 
       rol:''
     })
 
@@ -105,7 +106,19 @@ export const Register = ({user, setUser}) => {
             <option value="0">M</option>
             <option value="1" selected>F</option>
           </select>
+          <select name="tipo_sanguineo" onChange={handleClick} className="inputField2">
+            <option value="0">A+</option>
+            <option value="1" selected>A-</option>
+            <option value="2">B+</option>
+            <option value="3">B-</option>
+            <option value="4">AB+</option>
+            <option value="5">AB-</option>
+            <option value="6">O+</option>
+            <option value="7">O-</option>
+
+          </select>
         </div>
+       
 
         <div className="user-passw-container">
         <h5 className="user-passw">Rol</h5>

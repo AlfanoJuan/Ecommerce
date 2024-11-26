@@ -3,25 +3,28 @@ import jwt from 'jsonwebtoken'
 import bcryptjs from 'bcryptjs'
 
 export const postUser = async (req, res) => {
-
-    const { usuario, correo, contrasena, nombre, apellidoP,  fnacimiento, sexo, rol } = req.body;
+    // Agrega el nuevo campo tipoSangre
+    const { usuario, correo, contrasena, nombre, apellidoP, fnacimiento, sexo, rol, tipo_sanguineo } = req.body;
 
     const date = new Date();
     const regDate = date.toISOString().slice(0, 19).replace('T', ' ');
     
-    let contrasenaHaash = await bcryptjs.hash(contrasena, 8);
+    let contrasenaHash = await bcryptjs.hash(contrasena, 8);
     
     try {
+        // Modifica la consulta SQL para incluir el nuevo campo tipo_sangre
+        await pool.query(
+            'INSERT INTO tb_user (usuario, correo, contrasena, nombre, apellido_p, fecha_n, sexo, rol, tipo_sanguineo, regdate) VALUES (?,?,?,?,?,?,?,?,?,?)', 
+            [usuario, correo, contrasenaHash, nombre, apellidoP, fnacimiento, sexo, rol, tipo_sanguineo, regDate]
+        );
 
-        await pool.query('INSERT INTO tb_user (usuario, correo, contrasena, nombre, apellido_p, fecha_n, sexo, rol, regdate) VALUES (?,?,?,?,?,?,?,?,?)', 
-        [usuario, correo, contrasenaHaash, nombre, apellidoP, fnacimiento, sexo, rol, regDate]);
-
-        res.status(200).json('succesfull');
+        res.status(200).json('successful');
     } catch (error) {
         console.error('Error:', error);
         res.status(500).json('error');
     }
-}
+};
+
 
 export const postUserlogin = async (req, res) => {
 
